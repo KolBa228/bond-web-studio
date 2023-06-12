@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(90.86deg, #01142D 0.62%, #17131A 99.18%);
+    color: #FFFFFF;
+};
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #EBEBEB;
+};
+
+button {
+    background-color: var(main-white-color);
+    color: var(main-black-color);
+};
+
