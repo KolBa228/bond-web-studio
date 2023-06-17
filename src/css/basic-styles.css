@@ -62,3 +62,19 @@ button {
         padding-right: 60px;
     }
 }
+
+.section {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 688px) {
+    .section{
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width:1160px) {
+    .section {
+        margin-top: 144px;
+    }
+}
