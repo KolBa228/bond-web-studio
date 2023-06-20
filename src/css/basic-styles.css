@@ -59,11 +59,20 @@ h6 {
 
 
 .section {
-    margin-top: 40px;
+    margin-top: 0;
 }
 
+@media screen and (min-width: 320px) {
+
+    .section {
+        margin-top: 40px;
+    }
+
+}
+
+
 @media screen and (min-width: 768px) {
-    .section{
+    .section {
         margin-top: 64px;
     }
 }
@@ -98,6 +107,9 @@ h6 {
         max-width: 1160px;
         padding-left: 60px;
         padding-right: 60px;
-        overflow: auto;
+        overflow: visible;
     }
 }
+
+
+
