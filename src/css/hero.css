@@ -1,28 +1,52 @@
 .hero-section {
-    padding-top: 131px;
+  padding-top: 131px;
 }
 
 .hero-title {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 0.85;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.85;
+  background: linear-gradient(
+    90deg,
+    #ff8a00 1.43%,
+    #ff78d1 33.94%,
+    #c1fefe 57.87%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-list {
-    display: none;
+  display: none;
 }
 
 .hero-item {
-    display: none;
+  display: none;
 }
 
 .order-btn {
-    border: none;
-    border-radius: 4px;
-    padding: 15px 35px;
-    color: var(--main-black-color);
-    font-size: 18px;
-    line-height: 1.22;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 35px;
+  color: var(--main-black-color);
+  font-size: 18px;
+  line-height: 1.22;
+  font-family: 'Geologica', sans-serif;
+  background-color: var(--main-white-color);
+}
+
+.hero-buttons-container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #fdfff7;
 }

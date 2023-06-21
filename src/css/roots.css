@@ -1,11 +1,11 @@
 :root {
-    --main-white-color: #ffffff;
-    --secondary-white-color: #EBEBEB;
-    --main-black-color: #15131B;
-    --cards-color: #162235;
-    --red-star-color: rgba(255, 69, 69, 0.7);
-    --green-star-color: rgba(69, 255, 188, 0.5);
-    --pink-star-color: #FF45C0;
-    --main-blur: blur(87.5px);
-    --cubic: cubic-bezier(.53, .36, .67, 1.07);
+  --main-white-color: #ffffff;
+  --secondary-white-color: #ebebeb;
+  --main-black-color: #15131b;
+  --cards-color: #162235;
+  --red-star-color: rgba(255, 69, 69, 0.7);
+  --green-star-color: rgba(69, 255, 188, 0.5);
+  --pink-star-color: #ff45c0;
+  --main-blur: blur(87.5px);
+  --cubic: cubic-bezier(0.53, 0.36, 0.67, 1.07);
 }
