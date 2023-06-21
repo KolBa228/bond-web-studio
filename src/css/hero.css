@@ -1,0 +1,28 @@
+.hero-section {
+    padding-top: 131px;
+}
+
+.hero-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 0.85;
+}
+
+.hero-list {
+    display: none;
+}
+
+.hero-item {
+    display: none;
+}
+
+.order-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 15px 35px;
+    color: var(--main-black-color);
+    font-size: 18px;
+    line-height: 1.22;
+}

@@ -15,6 +15,10 @@ h6 {
     font-family: 'Montserrat';
 };
 
+button {
+    padding: 0;
+}
+
 .main-button {
     background-color: var(--main-white-color);
     color: var(--main-black-color);
@@ -63,12 +67,12 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
-    .section{
+    .section {
         margin-top: 64px;
     }
 }
 
-@media screen and (min-width:1160px) {
+@media screen and (min-width:1280px) {
     .section {
         margin-top: 144px;
     }
