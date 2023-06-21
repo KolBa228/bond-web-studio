@@ -1,5 +1,39 @@
 @import url('./roots.css');
 
+.b1 {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background-color: #4563FF;
+    filter: blur(60.5px);
+    z-index: -1;
+    left: 0;
+}
+
+.b3 {
+    background: rgba(69, 255, 188, 0.5);
+    filter: blur(87.5px);
+    width: 232px;
+    height: 232px;
+    z-index: -1;
+    position: absolute;
+    display: none;
+    left: 70%;
+}
+
+@media screen and (min-width: 768px) {
+    .b3 {
+        position: absolute;
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .b1 {
+        display: none;
+    }
+}
+
 .purple {
     background: linear-gradient(39.34deg, #02132A 0%, #7E0756 100%);
     border-radius: 4px;
