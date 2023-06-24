@@ -168,6 +168,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .sircle1 {
+    display: none;
+  }
+}
+
 .sircle2 {
   width: 114px;
   height: 114px;
@@ -250,4 +256,19 @@
 
 .sircle5 {
   display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .sircle5 {
+    display: block;
+    width: 252px;
+    height: 252px;
+    border-radius: 252px;
+    background: rgba(255, 69, 69, 0.7);
+    filter: blur(87.5px);
+    position: absolute;
+    z-index: -1;
+    left: 80%;
+    top: 670px;
+  }
 }

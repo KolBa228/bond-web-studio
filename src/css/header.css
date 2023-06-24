@@ -75,3 +75,50 @@
     background-color: var(--main-white-color);
   }
 }
+
+.bcg-img {
+  position: absolute;
+  z-index: -1;
+  left: 30px;
+  top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .bcg-img {
+    display: none;
+  }
+}
+
+.bcg-img2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bcg-img2 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    top: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bcg-img2 {
+    display: none;
+  }
+}
+
+.bcg-img3 {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .bcg-img3 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    top: 47px;
+  }
+}

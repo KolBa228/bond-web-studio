@@ -1,5 +1,6 @@
 .about-section {
   padding-top: 298px;
+  position: relative;
 }
 
 .images-section {
@@ -90,6 +91,42 @@
   line-height: 1.25;
 }
 
+.sircle6 {
+  width: 114px;
+  height: 114px;
+  border-radius: 114px;
+  background: #ff45c0;
+  filter: blur(60.5px);
+  position: absolute;
+  z-index: -1;
+  top: 900px;
+  left: 65%;
+}
+
+@media screen and (min-width: 768px) {
+  .sircle6 {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    background: rgba(69, 255, 188, 0.5);
+    filter: blur(87.5px);
+    top: 1120px;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sircle6 {
+    width: 151px;
+    height: 151px;
+    border-radius: 151px;
+    background: rgba(69, 255, 188, 0.5);
+    filter: blur(87.5px);
+    top: 200px;
+    left: 40%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-text {
     font-size: 20px;
@@ -111,5 +148,23 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 1.25;
+  }
+}
+
+.sircle7 {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .sircle7 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 252px;
+    height: 252px;
+    border-radius: 252px;
+    background: rgba(255, 69, 69, 0.7);
+    filter: blur(87.5px);
+    left: -20%;
   }
 }
