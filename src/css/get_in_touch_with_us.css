@@ -1,4 +1,25 @@
 
+
+.icon-Moon {
+    position: absolute;
+}
+
+.contact-us-stars {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-us-stars {
+        display: unset;
+            position: absolute;
+            width: 1127px;
+            height: 497px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+}
+
+
 .contact-us {
     width: 320px;
     background-color: var(--cards-color);
@@ -113,7 +134,6 @@
 .contact-title {
     position: relative;
     text-align: center;
-    font-size: 31px;
     line-height: 1.225;
     /* width: 266px; */
     padding-top: 32px;
@@ -150,6 +170,10 @@
     color: var(--main-white-color);
 }
 
+::placeholder {
+     color: var(--main-white-color);
+} 
+
 @media screen and (min-width: 768px) {
     .comment {
         width: 580px;
@@ -183,6 +207,7 @@
     line-height: 1,25;
     cursor: pointer;
     border: none;
+    transition: color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07), background-color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07);
 }
 
 @media screen and (min-width: 1280px) {
