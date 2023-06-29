@@ -241,7 +241,13 @@
 @media screen and (min-width: 1280px) {
   .preview1 {
     display: block;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
+}
+
+.preview1.scroll-check {
+  opacity: 1;
 }
 
 .preview2 {
@@ -251,6 +257,12 @@
   height: 374px;
   left: -72px;
   top: -172px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.preview2.scroll-check {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1280px) {
@@ -269,6 +281,12 @@
   position: absolute;
   top: -5px;
   left: -7px;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.preview3.scroll-check {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1280px) {
