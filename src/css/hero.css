@@ -272,3 +272,22 @@
     top: 670px;
   }
 }
+
+.arrow-svg {
+  width: 22px;
+  height: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-svg {
+    width: 37px;
+    height: 88px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .arrow-svg {
+    width: 38px;
+    height: 82px;
+  }
+}

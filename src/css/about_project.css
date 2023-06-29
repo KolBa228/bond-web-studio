@@ -168,3 +168,48 @@
     left: -20%;
   }
 }
+
+.title-svg-container {
+  display: flex;
+  gap: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-svg-container {
+    gap: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-svg-container {
+    gap: 25px;
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.planet_svg {
+  width: 84px;
+  height: 83px;
+}
+
+@media screen and (min-width: 768px) {
+  .planet_svg {
+    display: none;
+  }
+}
+
+.arrow_svg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow_svg {
+    display: block;
+    width: 90px;
+    height: 129px;
+  }
+}
