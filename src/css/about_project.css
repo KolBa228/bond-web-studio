@@ -1,13 +1,7 @@
 .about-section {
   padding-top: 298px;
   position: relative;
-}
-
-.images-section {
-  display: none;
-}
-
-.about-container {
+  overflow: inherit;
 }
 
 .about-global-container {
@@ -19,12 +13,6 @@
   .about-global-container {
     flex-direction: row-reverse;
     gap: 73px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .images-section {
-    display: block;
   }
 }
 
@@ -211,5 +199,83 @@
     display: block;
     width: 90px;
     height: 129px;
+  }
+}
+
+.about-down-container {
+  position: relative;
+}
+
+.btn-circle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-circle {
+    display: block;
+    width: 313px;
+    height: 124px;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -55px;
+    pointer-events: none;
+  }
+}
+
+.images-section {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .images-section {
+    display: block;
+    position: relative;
+  }
+}
+
+.preview1 {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .preview1 {
+    display: block;
+  }
+}
+
+.preview2 {
+  position: absolute;
+  display: block;
+  width: 313px;
+  height: 374px;
+  left: -72px;
+  top: -172px;
+}
+
+@media screen and (min-width: 1280px) {
+  .preview2 {
+    width: 377px;
+    height: 420px;
+    left: -18px;
+    top: 148px;
+  }
+}
+
+.preview3 {
+  width: 121px;
+  height: 222px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -7px;
+}
+
+@media screen and (min-width: 1280px) {
+  .preview3 {
+    width: 145px;
+    height: 250px;
+    top: 313px;
+    left: 247px;
   }
 }
