@@ -1,108 +1,123 @@
 .our-cases-title {
-    text-align: center;
-    font-size: 31px;
-    line-height: 1.225;
+  text-align: center;
+  font-size: 31px;
+  line-height: 1.225;
 }
 
 @media screen and (min-width: 768px) {
-    .our-cases-title {
-        font-size: 64px;
-        line-height: 1.218;
-    }
+  .our-cases-title {
+    font-size: 64px;
+    line-height: 1.218;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    
 }
 /*  */
 .our-cases-card {
-    width: 280px;
-    height: 437px;
-    background: linear-gradient(223.32deg, #162436 0%, rgba(22, 36, 54, 0) 100%);
-    margin-top: 32px;
-    border-radius: 8px;
-    position: relative;
+  width: 280px;
+  height: 437px;
+  background: linear-gradient(223.32deg, #162436 0%, rgba(22, 36, 54, 0) 100%);
+  margin-top: 32px;
+  border-radius: 8px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
-    .our-cases-card {
-        width: 570px;
-        height: 587px;
-        margin-top: 40px;
-    }
-}
-/*  */
-.cases-card-title {
-    padding-top: 20px;
-    padding-left: 25px;
-    font-family: Montserrat;
-    font-size: 24px;
-    line-height: 1.2;
-}
-
-@media screen and (min-width: 768px) {
-    .cases-card-title {
-        font-size: 36px;
-        padding-top: 24px;
-        padding-left: 36px;
-    }
+  .our-cases-card {
+    width: 560px !important;
+    height: 587px;
+    margin-top: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .cases-card-title {
-        
-    }
+  .our-cases-card.swiper-slide {
+    width: 540px;
+  }
+}
+/*  */
+.cases-card-title {
+  padding-top: 20px;
+  padding-left: 25px;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .cases-card-title {
+    font-size: 36px;
+    padding-top: 24px;
+    padding-left: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cases-card-title {
+  }
 }
 
 .cases-card-text {
-    padding-top: 20px;
-    padding-left: 25px;
-    width: 238px;
-    font-size: 16px;
-    line-height: 1.25;  
+  padding-top: 20px;
+  padding-left: 25px;
+  width: 238px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 @media screen and (min-width: 768px) {
-    .cases-card-text {
-        padding-top: 12px;
-        padding-left: 36px;
-        width: 504px;
-    }
+  .cases-card-text {
+    padding-top: 12px;
+    padding-left: 36px;
+    width: 504px;
+  }
 }
 /*  */
 .cases-big-img {
-    width: 146px;
-    height: 159px;
-    border-radius: 4px 4px 0px 0px;
-    padding-top: 28px;
-    padding-left: 25px;
+  width: 146px;
+  height: 159px;
+  border-radius: 4px 4px 0px 0px;
+  padding-top: 28px;
+  padding-left: 25px;
 }
 
 @media screen and (min-width: 768px) {
-    .cases-big-img {
-        width: 305px;
-        height: 333px;
-        padding-top: 36px;
-        padding-left: 36px;
-    }
+  .cases-big-img {
+    width: 305px;
+    height: 333px;
+    padding-top: 36px;
+    padding-left: 36px;
+  }
 }
 
 /*  */
 .cases-small-img {
-    width: 143.85px;
-    height: 126.09px;
-    border-radius: 4px 0px 0px 0px;
-    position: absolute;
-    top: 60.7px;
-    left: 112px;
-    z-index: 1;
+  width: 143.85px;
+  height: 126.09px;
+  border-radius: 4px 0px 0px 0px;
+  position: absolute;
+  top: 60.7px;
+  left: 112px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
-    .cases-small-img {
-        width: 301px;
-        height: 264px;
-        top: 105px;
-        left: 233px;
-    }
+  .cases-small-img {
+    width: 301px;
+    height: 264px;
+    top: 105px;
+    left: 233px;
+  }
+}
+
+.our-cases-list {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .our-cases-list {
+    display: flex;
+    gap: 20px;
+  }
 }

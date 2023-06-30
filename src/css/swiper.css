@@ -1,0 +1,99 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-button-prev.swiper-btn {
+  width: 67px;
+  height: 67px;
+  border: 1px solid var(--main-white-color);
+  border-radius: 4px;
+}
+
+.swiper-button-next.swiper-btn {
+  width: 67px;
+  height: 67px;
+  border: 1px solid var(--main-white-color);
+  border-radius: 4px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-btn:hover,
+.swiper-btn:focus {
+  background-color: var(--main-white-color);
+}
+
+.swiper-btn:hover .next-icon,
+.swiper-btn:focus .prev-icon,
+.swiper-btn:hover .prev-icon,
+.swiper-btn:focus .next-icon {
+  fill: var(--main-black-color);
+}
+
+.next-icon {
+  fill: var(--main-white-color);
+  width: 31px;
+  height: 67px;
+}
+
+.prev-icon {
+  fill: var(--main-white-color);
+  width: 31px;
+  height: 67px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid var(--main-white-color);
+  opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--main-white-color);
+}
+
+.swiper-pagination {
+  position: absolute !important;
+  top: 515px !important;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    top: 665px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.section.our-cases {
+  position: relative;
+}
+
+.button-box {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .button-box {
+    display: flex !important;
+    margin-top: 50px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+}
