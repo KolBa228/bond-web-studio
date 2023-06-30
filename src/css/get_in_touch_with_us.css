@@ -1,4 +1,88 @@
 
+.icon-Moon {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .icon-Moon {
+        position: absolute;
+        width: 91px;
+        height: 86.312px;
+        margin-top: 454px;
+        margin-left: 549px;
+        display: unset;
+        /* top: 860%;
+        left: 85%;
+        transform: translate(-85%); */
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .icon-Moon {
+            position: absolute;
+            pointer-events: none;
+            width: 134px;
+            height: 127.1px;
+            margin-top: 62px;
+            margin-left: 10px;
+        }
+}
+
+.contact-us-stars {
+    display: none;
+    pointer-events: none;
+}
+
+.contact-us-stars-tablet {
+    display: none;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us-stars-tablet {
+            display: unset;
+            position: absolute;
+            width: 668px;
+            height: 473px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-us-stars-tablet {
+        display: none;
+        
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-us-stars {
+        display: unset;
+            position: absolute;
+            width: 1127px;
+            height: 497px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+}
+
+.icon-mobile-stars {
+    position: absolute;
+    width: 291px;
+    height: 408.68px;
+    left: 50%;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+    .icon-mobile-stars {
+        display: none;
+    }
+}
+
+
 .contact-us {
     width: 320px;
     background-color: var(--cards-color);
@@ -15,8 +99,9 @@
     height: 114px;
     background-color: #FF45C0;
     filter: blur(60.5px);
-    z-index: 1;
+    z-index: -1;
     left: 60%;
+    pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,6 +128,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    pointer-events: fill;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,7 +199,6 @@
 .contact-title {
     position: relative;
     text-align: center;
-    font-size: 31px;
     line-height: 1.225;
     /* width: 266px; */
     padding-top: 32px;
@@ -150,6 +235,10 @@
     color: var(--main-white-color);
 }
 
+::placeholder {
+     color: var(--main-white-color);
+} 
+
 @media screen and (min-width: 768px) {
     .comment {
         width: 580px;
@@ -183,6 +272,7 @@
     line-height: 1,25;
     cursor: pointer;
     border: none;
+    transition: color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07), background-color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07);
 }
 
 @media screen and (min-width: 1280px) {

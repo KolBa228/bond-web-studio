@@ -1,3 +1,42 @@
+
+.our-c-svg {
+    width: 204px;
+    height: 49.314px;
+}
+
+@media screen and (min-width: 768px) {
+    .our-c-svg {
+            width: 398px;
+            height: 97.877px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .our-c-svg {
+        width: 398px;
+        height: 104px;
+    }
+}
+
+.circle-span {
+    position: absolute;
+    top: 2187px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .circle-span {
+            top: 2267px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .circle-span {
+            top: 2960px;
+        }
+}
+
 .our-cases-title {
   text-align: center;
   font-size: 31px;

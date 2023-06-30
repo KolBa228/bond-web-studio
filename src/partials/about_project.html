@@ -1,8 +1,18 @@
 <section class="about-section container">
   <div class="about-global-container">
     <div class="about-container">
-      <h1 class="about-title-main">ABOUT</h1>
-      <h2 class="about-title-second">PROJECT</h2>
+      <div class="title-svg-container">
+        <div class="title-container">
+          <h1 class="about-title-main" id="about">ABOUT</h1>
+          <h2 class="about-title-second">PROJECT</h2>
+        </div>
+        <svg class="planet_svg">
+          <use href="../images/symbol-defs.svg#icon-Planet"></use>
+        </svg>
+        <svg class="arrow_svg">
+          <use href="../images/symbol-defs.svg#icon-Arrow"></use>
+        </svg>
+      </div>
       <ul class="about-list">
         <li class="about-list-item">
           <p class="about-text">
@@ -16,6 +26,7 @@
             We are committed to delivering high-quality websites that not only
             impress your visitors but also drive business growth.
           </p>
+          <span class="sircle6"></span>
         </li>
         <li class="about-list-item">
           <p class="about-text">
@@ -24,12 +35,30 @@
           </p>
         </li>
       </ul>
-      <button type="button" class="about-btn">Contact us</button>
+      <div class="about-down-container">
+        <button type="button" class="about-btn">Contact us</button>
+        <svg class="btn-circle">
+          <use href="../images/symbol-defs.svg#icon-Big-Circle"></use>
+        </svg>
+      </div>
     </div>
     <div class="images-section">
-      <img src="" alt="laptop" />
-      <img src="" alt="tablet" />
-      <img src="" alt="mobile" />
+      <img
+        src="../images/laptop.png"
+        alt="laptop"
+        class="preview1 scroll-check"
+      />
+      <img
+        src="../images/tablet.png"
+        alt="tablet"
+        class="preview2 scroll-check"
+      />
+      <img
+        src="../images/phone.png"
+        alt="mobile"
+        class="preview3 scroll-check"
+      />
     </div>
   </div>
+  <span class="sircle7"></span>
 </section>

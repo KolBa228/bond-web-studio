@@ -17,6 +17,14 @@ h6 {
 
 button {
     padding: 0;
+    transition: color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07), background-color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07);
+}
+
+button:hover,
+button:focus {
+    color: var(--main-white-color);
+    background-color: var(--main-black-color);
+
 }
 
 .main-button {
