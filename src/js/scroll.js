@@ -14,7 +14,6 @@ function checkImages() {
       item.classList.add('scroll-check');
     } else {
       item.classList.remove('scroll-check');
-      console.log(123);
     }
   });
 }

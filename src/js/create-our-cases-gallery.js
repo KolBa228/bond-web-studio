@@ -1,4 +1,4 @@
-import { galleryCases } from '../js/our-cases-gallery';
+import { galleryCases } from './our-cases-gallery';
 
 const listCases = document.querySelector('.our-cases-list');
 
