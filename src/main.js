@@ -8,3 +8,4 @@ import './js/scroll';
 import './js/anchor-scroll';
 import { swiper } from './js/swiper';
 galleryMarkup();
+import './js/mobile-menu';
