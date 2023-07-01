@@ -46,7 +46,7 @@ button:focus {
     }
 }
 
-.main-title {
+/* .main-title {
     font-size: 31px;
     line-height: 1.22580645;
 };
@@ -55,8 +55,8 @@ button:focus {
     .main-title {
         font-size: 64px;
         line-height: 1.21;
-    }
-}
+    };
+}; */
 
 .swipe-it {
     font-family: 'Indie Flower';
