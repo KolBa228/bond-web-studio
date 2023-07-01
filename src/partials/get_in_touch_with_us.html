@@ -1,31 +1,56 @@
 <section class="section">
-    <svg class="icon-mobile-stars">
-        <use href="../images/symbol-defs.svg#icon-mobile-stars
-"></use>
+  <svg class="icon-mobile-stars">
+    <use
+      href="../images/symbol-defs.svg#icon-mobile-stars
+"
+    ></use>
+  </svg>
+  <svg class="contact-us-stars-tablet">
+    <use href="../images/symbol-defs.svg#icon-tablet-stars"></use>
+  </svg>
+  <svg class="contact-us-stars">
+    <use href="../images/symbol-defs.svg#icon-Stars"></use>
+  </svg>
+  <div class="contact-us">
+    <svg class="icon-Moon">
+      <use href="../images/symbol-defs.svg#icon-moon-g"></use>
     </svg>
-    <svg class="contact-us-stars-tablet">
-        <use href="../images/symbol-defs.svg#icon-tablet-stars"></use>
-    </svg>
-    <svg class="contact-us-stars">
-        <use href="../images/symbol-defs.svg#icon-Stars"></use>
-    </svg>
-    <div class="contact-us">
-        <svg class="icon-Moon">
-            <use href="../images/symbol-defs.svg#icon-moon-g"></use>
-        </svg>
-        <span class="b2"></span>
-        <h2 class="contact-title">Get in touch with us!</h2>
+    <span class="b2"></span>
+    <h2 class="contact-title" id="contact-us">Get in touch with us!</h2>
 
-
-        <form class="contact-form" action="">
-            <!-- NAME -->
-            <input class="input" type="text" id="fname" name="firstname" placeholder="Name">
-            <!-- PHONE -->
-            <input class="input" type="text" id="phone" name="phone" placeholder="Phone">
-            <input class="input" type="text" id="email" name="email" placeholder="E-mail">
-            <!-- COMMENT -->
-            <textarea class="comment" id="subject" name="subject" placeholder="Comment" style="height:200px"></textarea>
-            <button class="sub-btn" type="submit">Contact us</button>
-        </form>
-    </div>
+    <form class="contact-form" action="contact.php" method="post">
+      <!-- NAME -->
+      <input
+        class="input"
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Name"
+      />
+      <!-- PHONE -->
+      <input
+        class="input"
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Phone"
+      />
+      <input
+        class="input"
+        type="text"
+        id="email"
+        name="email"
+        placeholder="E-mail"
+      />
+      <!-- COMMENT -->
+      <textarea
+        class="comment"
+        id="subject"
+        name="subject"
+        placeholder="Comment"
+        style="height: 200px"
+      ></textarea>
+      <button class="sub-btn" type="submit">Contact us</button>
+    </form>
+  </div>
 </section>
