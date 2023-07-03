@@ -1,0 +1,220 @@
+.feedback-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 60;
+  width: 280px;
+  height: 443px;
+  background-color: rgba(16, 32, 58, 1);
+  border-radius: 19px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-container {
+    width: 688px;
+    height: 484px;
+    border-radius: 19px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .feedback-container {
+    width: 1123px;
+    height: 621px;
+  }
+}
+
+.feedback-container.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popup-text {
+  text-align: center;
+  max-width: 207px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-text {
+    max-width: 500px;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .popup-text {
+    max-width: 583px;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@media screen and(min-width: 768px) {
+  .text-wrapper {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .text-wrapper {
+    gap: 35px;
+  }
+}
+
+.close-btn {
+  color: var(--main-black-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.22;
+  padding: 18px 45px;
+  background-color: var(--main-white-color);
+}
+
+.success-animation {
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+
+@media screen and (min-width: 768px) {
+  .success-animation {
+    margin-top: 83px;
+    margin-bottom: 78px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .success-animation {
+    margin-top: 113px;
+    margin-bottom: 100px;
+  }
+}
+
+.sirclePop1 {
+  position: absolute;
+  background-color: rgba(21, 45, 83, 1);
+  width: 118px;
+  height: 118px;
+  border-radius: 100%;
+  top: 96px;
+  left: 76px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .sirclePop1 {
+    width: 149px;
+    height: 149px;
+    top: 64px;
+    left: 264px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sirclePop1 {
+    top: 92px;
+    left: 482px;
+  }
+}
+
+.sirclePop2 {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  background-color: rgba(24, 55, 104, 1);
+  border-radius: 100%;
+  top: 83px;
+  left: 63px;
+  z-index: -2;
+}
+
+@media screen and (min-width: 768px) {
+  .sirclePop2 {
+    width: 182px;
+    height: 182px;
+    top: 48px;
+    left: 248px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sirclePop2 {
+    top: 76px;
+    left: 466px;
+  }
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  margin: 0 auto;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: rgba(21, 45, 83, 1);
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}

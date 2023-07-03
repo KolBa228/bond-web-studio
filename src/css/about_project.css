@@ -127,6 +127,8 @@
 
 @media screen and (min-width: 768px) {
   .about-btn {
+    width: 130px;
+    color: var(--main-black-color);
     margin-top: 64px;
     display: block;
     border: none;

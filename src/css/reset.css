@@ -38,3 +38,7 @@ img {
   width: auto;
   height: auto;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
