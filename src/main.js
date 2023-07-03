@@ -9,3 +9,4 @@ import './js/anchor-scroll';
 import { swiper } from './js/swiper';
 galleryMarkup();
 import './js/mobile-menu';
+import './js/what-we-do'
