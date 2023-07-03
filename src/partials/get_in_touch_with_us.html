@@ -16,17 +16,22 @@
     <span class="b2"></span>
     <h2 class="contact-title" id="contact-us">Get in touch with us!</h2>
 
-    <form class="contact-form" action="contact.php" method="post">
+    <form class="contact-form">
       <!-- NAME -->
-      <input class="input" type="text" id="fname" name="firstname" placeholder="Name" />
+      <!-- <input class="input" type="text" id="fname" name="firstname" placeholder="Name" /> -->
+      <input class="input" type="text" id="fname" name="firstname" pattern="[A-Za-zА-Яа-яЁё]{3,}" placeholder="Name"
+        required />
+      <p class="name-err">*Enter a minimum of 3 characters.</p>
       <!-- PHONE -->
       <input class="input" type="text" id="phone" name="phone" placeholder="Phone" />
+      <p class="phone-err">*Enter the phone number in the format 07777777777.</p>
       <input class="input" type="text" id="email" name="email" placeholder="E-mail" />
       <!-- COMMENT -->
       <textarea class="comment" id="subject" name="subject" placeholder="Comment" style="height: 200px"></textarea>
+      <p class="comment-err">*Enter a minimum of 20 characters.</p>
       <!-- <button class="sub-btn" type="submit">Contact us</button> -->
-      <button class="sub-btn" type="submit" disabled>Contact us</button>
-      <textarea
+      <button class="sub-btn js-open-modal" type="submit" data-modal="1">Contact us</button>
+      <!-- <textarea
         class="comment"
         id="subject"
         name="subject"
@@ -35,7 +40,7 @@
       ></textarea>
       <button class="sub-btn js-open-modal" type="submit" data-modal="1">
         Contact us
-      </button>
+      </button> -->
     </form>
   </div>
 </section>

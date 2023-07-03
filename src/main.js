@@ -1,4 +1,4 @@
-import './js_2/get_in_touch_with_us';
+// import './js_2/get_in_touch_with_us';
 import './js/scroll';
 import './js/anchor-scroll';
 import { galleryMarkup } from './js/create-our-cases-gallery';
@@ -11,5 +11,5 @@ galleryMarkup();
 import './js/mobile-menu';
 
 import './js/what-we-do'
-import './js/modals';
-
+// import './js/modals';
+import './js_2/test_validation'
