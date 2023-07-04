@@ -125,6 +125,7 @@
 /* CONTACT-FORM */
 
 .contact-form {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -355,4 +356,30 @@
         left: 214px;
         top: 66px;
         }
+}
+
+.btn-err {
+    display: none;
+    top: 672px;
+    left: 90px;
+    position: absolute;
+    text-align: center;
+    color: #FF45C0;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-err {
+            font-size: 10px;
+            left: 292px;
+            top: 430px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .btn-err {
+        font-size: 14px;
+        left: 510px;
+        top: 451px;
+    }
 }
