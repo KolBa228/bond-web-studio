@@ -1,4 +1,3 @@
-
 import { functions } from 'lodash';
 import throttle from 'lodash.throttle';
 
@@ -18,21 +17,25 @@ const commErr = document.querySelector('.comment-err');
 const totalErr = document.querySelector('.btn-err');
 
 function showTotalErr() {
-    if (textarea.value.length < 20 || iName.value.length < 3 || iPhone.value.length < 9 || iEmail.value.length < 3) {
-    totalErr.style.display = "unset";
-    } else {
-        totalErr.style.display = "none"
-    }
-};
+  if (
+    textarea.value.length < 20 ||
+    iName.value.length < 3 ||
+    iPhone.value.length < 9 ||
+    iEmail.value.length < 3
+  ) {
+    totalErr.style.display = 'unset';
+  } else {
+    totalErr.style.display = 'none';
+  }
+}
 
 function showCommentErr() {
-    if (textarea.value.length < 20) {
-    commErr.style.display = "unset";
-    } else {
-        commErr.style.display = "none";
+  if (textarea.value.length < 20) {
+    commErr.style.display = 'unset';
+  } else {
+    commErr.style.display = 'none';
   }
-};
-
+}
 
 function testErrN() {
   if (iName.value.length >= 3) {
@@ -40,19 +43,19 @@ function testErrN() {
   } else {
     showNameErr();
   }
-};
+}
 
 function showNameErr() {
   if (iName.value.length <= 3) {
-    nameErr.style.display = "unset";
+    nameErr.style.display = 'unset';
   }
-};
+}
 
 function unShowNameErr() {
   if (iName.value.length <= 3) {
-    nameErr.style.display = "none";
+    nameErr.style.display = 'none';
   }
-};
+}
 
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', throttle(onFormInput, 500));
@@ -62,10 +65,10 @@ let feedbackFormData = {};
 function onFormInput(e) {
   e.preventDefault();
 
-    unShowNameErr();
-    showCommentErr()
-    testErrN();
-    showTotalErr()
+  unShowNameErr();
+  showCommentErr();
+  testErrN();
+  showTotalErr();
 
   feedbackFormData[e.target.name] = e.target.value;
 
@@ -78,17 +81,18 @@ function onFormInput(e) {
   if (e.target === textarea) {
     feedbackFormData.message = e.target.value;
   }
-};
+}
 
 function onFormSubmit(e) {
   e.preventDefault();
   isBtnDisabledTest();
   e.currentTarget.reset();
+  form.reset();
 
   localStorage.removeItem(STORAGE_KEY);
 
   feedbackFormData = {};
-};
+}
 
 function textareaInputMessage() {
   const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -102,7 +106,7 @@ function textareaInputMessage() {
     textarea.value = savedData.message;
     feedbackFormData.message = savedData.message;
   }
-};
+}
 
 function isBtnDisabled() {
   if (
@@ -115,7 +119,7 @@ function isBtnDisabled() {
   } else {
     submitButton.disabled = true;
   }
-};
+}
 
 function isBtnDisabledTest() {
   if (
@@ -126,7 +130,7 @@ function isBtnDisabledTest() {
   ) {
     return;
   }
-};
+}
 
 // ВАЛИДАЦИЯ ИМЕНИ
 iName.addEventListener('input', validateName);
@@ -136,11 +140,13 @@ function validateName() {
   const pattern = /^[A-Za-z]{3,}$/;
 
   if (!pattern.test(name)) {
-    iName.setCustomValidity('Enter a name consisting only of letters and with a minimum length of 3 characters.');
+    iName.setCustomValidity(
+      'Enter a name consisting only of letters and with a minimum length of 3 characters.'
+    );
   } else {
     iName.setCustomValidity('');
   }
-};
+}
 
 // ВАЛИДАЦИЯ EMAIL
 iEmail.addEventListener('input', validateEmail);
@@ -154,7 +160,7 @@ function validateEmail() {
   } else {
     iEmail.setCustomValidity('');
   }
-};
+}
 
 // ВАЛИДАЦИЯ НОМЕРА
 iPhone.addEventListener('keydown', restrictNonNumericInput);
@@ -162,13 +168,26 @@ iPhone.addEventListener('input', cleanNonNumericInput);
 iPhone.addEventListener('input', validatePhone);
 
 function restrictNonNumericInput(event) {
-  const allowedKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', 'Backspace'];
+  const allowedKeys = [
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '+',
+    'Backspace',
+  ];
   const keyPressed = event.key;
-  
+
   if (!allowedKeys.includes(keyPressed)) {
     event.preventDefault();
   }
-};
+}
 
 function cleanNonNumericInput() {
   let phone = iPhone.value;
@@ -181,11 +200,12 @@ function validatePhone() {
   const pattern = /^[0-9+]{9,18}$/;
 
   if (!pattern.test(phone)) {
-    iPhone.setCustomValidity('Enter a number consisting only of digits and with a minimum length of 9 characters.');
+    iPhone.setCustomValidity(
+      'Enter a number consisting only of digits and with a minimum length of 9 characters.'
+    );
   } else {
     iPhone.setCustomValidity('');
   }
-};
+}
 
 textareaInputMessage();
-
