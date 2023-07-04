@@ -124,6 +124,12 @@
   font-size: 18px;
   line-height: 1.22;
   color: #fdfff7;
+  transition: text-shadow 0.4s cubic-bezier(0.53, 0.36, 0.67, 1.07);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  text-shadow: 0 0 10px #ffffff, 2px 2px 3px rgba(206, 206, 206, 0.62);
 }
 
 @media screen and (min-width: 768px) {
