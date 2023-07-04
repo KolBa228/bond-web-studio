@@ -9,7 +9,6 @@ import './js/anchor-scroll';
 import { swiper } from './js/swiper';
 galleryMarkup();
 import './js/mobile-menu';
-
-import './js/what-we-do'
-// import './js/modals';
-import './js_2/test_validation'
+import './js/modals';
+import './js/what-we-do';
+import './js_2/test_validation';
