@@ -267,8 +267,8 @@
   margin-bottom: 65px;
   padding: 20px 45px;
   color: var(--main-black-color);
-  font-size: 24px;
-  line-height: 1, 25;
+  font-size: 20px;
+  line-height: 1.22;
   cursor: pointer;
   border: none;
   transition: color 0.25s cubic-bezier(0.53, 0.36, 0.67, 1.07),
