@@ -85,6 +85,14 @@
   font-weight: 500;
   font-family: 'Geologica', sans-serif;
   background-color: var(--main-white-color);
+  transition: color 0.4s cubic-bezier(0.53, 0.36, 0.67, 1.07),
+    background-color 0.4s cubic-bezier(0.53, 0.36, 0.67, 1.07);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  color: var(--main-white-color);
+  background-color: var(--main-black-color);
 }
 
 @media screen and (min-width: 768px) {
