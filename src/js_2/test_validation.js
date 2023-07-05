@@ -37,25 +37,33 @@ function showCommentErr() {
   }
 }
 
-function testErrN() {
-  if (iName.value.length >= 3) {
-    unShowNameErr();
-  } else {
-    showNameErr();
-  }
-}
-
-function showNameErr() {
+function testAnErr() {
   if (iName.value.length <= 3) {
     nameErr.style.display = 'unset';
-  }
-}
-
-function unShowNameErr() {
-  if (iName.value.length <= 3) {
+  } else {
     nameErr.style.display = 'none';
   }
 }
+
+// function testErrN() {
+//   if (iName.value.length >= 3) {
+//     unShowNameErr();
+//   } else {
+//     showNameErr();
+//   }
+// }
+
+// function showNameErr() {
+//   if (iName.value.length <= 3) {
+//     nameErr.style.display = 'unset';
+//   }
+// }
+
+// function unShowNameErr() {
+//   if (iName.value.length <= 3) {
+//     nameErr.style.display = 'none';
+//   }
+// }
 
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', throttle(onFormInput, 500));
@@ -65,9 +73,10 @@ let feedbackFormData = {};
 function onFormInput(e) {
   e.preventDefault();
 
-  unShowNameErr();
+  testAnErr()
+  // unShowNameErr();
   showCommentErr();
-  testErrN();
+  // testErrN();
   showTotalErr();
 
   feedbackFormData[e.target.name] = e.target.value;
