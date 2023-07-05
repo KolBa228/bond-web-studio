@@ -30,7 +30,7 @@ export const galleryCases = [
   {
     title: 'Car-rental',
     description:
-      'Our website has a modern and stylish design that makes it easy for users to find the technology they need. We provide convenient searches, filters and detailed product descriptions to help customers make informed choices',
+      'Discover seamless car rental on our sleek site. Easy navigation, advanced search, and detailed listings ensure finding the perfect vehicle. Convenient filters and informative descriptions aid informed decisions. Rent with confidence, experience the best.',
     largeImage: '../images/cases-img/car-big.jpg',
     smallImage: '../images/cases-img/car-small.jpg',
   },
