@@ -5,6 +5,7 @@
 .header-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 144px;
 }
 
@@ -12,6 +13,18 @@
   .header-container {
     gap: 0;
     justify-content: space-between;
+  }
+}
+
+.logo-img {
+  width: 50px;
+  height: 75px;
+}
+
+@media screen and (min-width: 1280px) {
+  .logo-img {
+    width: 80px;
+    height: 115px;
   }
 }
 
@@ -128,7 +141,7 @@
 .bcg-svg1 {
   position: absolute;
   z-index: -1;
-  top: -8%;
+  top: -55px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -171,6 +184,6 @@
     z-index: -1;
     left: 50%;
     transform: translate(-50%);
-    top: 0px;
+    top: 60px;
   }
 }
