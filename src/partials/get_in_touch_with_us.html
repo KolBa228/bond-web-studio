@@ -18,7 +18,11 @@
     <span class="b2"></span>
     <h2 class="contact-title" id="contact-us">Get in touch with us!</h2>
 
-    <form class="contact-form">
+    <form
+      action="https://formspree.io/f/mqkvaeey"
+      method="POST"
+      class="contact-form"
+    >
       <!-- NAME -->
       <!-- <input class="input" type="text" id="fname" name="firstname" placeholder="Name" /> -->
       <input
@@ -63,9 +67,11 @@
         type="submit"
         data-modal="1"
         disabled
+        aria-label="push-your-feedback"
       >
         Contact us
       </button>
+      <input type="hidden" name="_cc" value="technotrashinfo@gmail.com" />
       <p class="btn-err">Please fill in all fields.</p>
     </form>
   </div>

@@ -218,3 +218,17 @@ function validatePhone() {
 }
 
 textareaInputMessage();
+
+
+submitButton.addEventListener('click', onSubBtn);
+
+function onSubBtn(e) {
+  
+}
+
+
+// const form = document.querySelector('.contact-form');
+// const iName = document.querySelector('#fname');
+// const iPhone = document.querySelector('#phone');
+// const iEmail = document.querySelector('#email');
+// const textarea = document.querySelector('.comment');
