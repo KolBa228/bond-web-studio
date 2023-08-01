@@ -1,3 +1,12 @@
+button[disabled] {
+  background-color: var(--main-white-color);
+  color: var(--main-black-color);
+  /* Убираем контур при фокусе */
+  cursor: not-allowed;
+  /* Изменяем курсор на "not-allowed" */
+  /* Дополнительные стили, если необходимо */
+}
+
 .icon-Moon {
   display: none;
 }

@@ -26,9 +26,6 @@ export const galleryCases = [
 
     largeImage: 'https://i.ibb.co/2ggb0gG/kitchen-big.jpg',
     smallImage: 'https://i.ibb.co/KD02cPL/kitchen-small.jpg',
-
-   
-
   },
   {
     title: 'Tech-Shop',
