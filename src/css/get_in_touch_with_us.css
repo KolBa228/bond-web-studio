@@ -127,6 +127,12 @@ button[disabled] {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .contact-us {
+    width: 1320px;
+  }
+}
+
 /* CONTACT-FORM */
 
 .contact-form {
@@ -188,6 +194,12 @@ button[disabled] {
     width: 250px;
     height: 65px;
     padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input {
+    width: 300px;
   }
 }
 
@@ -259,6 +271,12 @@ button[disabled] {
   .comment {
     width: 820px;
     margin-left: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comment {
+    width: 975px;
   }
 }
 

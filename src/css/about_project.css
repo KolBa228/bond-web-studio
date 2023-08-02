@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .about-global-container {
+    gap: 250px;
+  }
+}
+
 .about-title-main {
   color: var(--main-white-color);
   font-size: 31px;
@@ -60,6 +66,13 @@
   .about-list {
     margin-top: 40px;
     gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-list {
+    margin-top: 30px;
+    gap: 24px;
   }
 }
 

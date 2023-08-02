@@ -1,9 +1,8 @@
 body {
-    font-family: 'Geologica', sans-serif;
-    background: linear-gradient(90.86deg, #01142D 0.62%, #17131A 99.18%);
-    color: #FFFFFF;
-};
-
+  font-family: 'Geologica', sans-serif;
+  background: linear-gradient(90.86deg, #01142d 0.62%, #17131a 99.18%);
+  color: #ffffff;
+}
 
 h1,
 h2,
@@ -11,39 +10,38 @@ h3,
 h4,
 h5,
 h6 {
-    color: #EBEBEB;
-    font-family: 'Montserrat';
-};
+  color: #ebebeb;
+  font-family: 'Montserrat';
+}
 
 button {
-    padding: 0;
-    transition: color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07), background-color 0.250s cubic-bezier(0.53, 0.36, 0.67, 1.07);
+  padding: 0;
+  transition: color 0.25s cubic-bezier(0.53, 0.36, 0.67, 1.07),
+    background-color 0.25s cubic-bezier(0.53, 0.36, 0.67, 1.07);
 }
 
 button:hover,
 button:focus {
-    color: var(--main-white-color);
-    background-color: var(--main-black-color);
-
+  color: var(--main-white-color);
+  background-color: var(--main-black-color);
 }
 
 .main-button {
-    background-color: var(--main-white-color);
-    color: var(--main-black-color);
-
-};
+  background-color: var(--main-white-color);
+  color: var(--main-black-color);
+}
 
 .main-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25;
-};
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+}
 
 @media screen and (min-width: 768px) {
-    .main-text {
-        font-size: 20px;
-        line-height: 1.25;
-    }
+  .main-text {
+    font-size: 20px;
+    line-height: 1.25;
+  }
 }
 
 /* .main-title {
@@ -59,69 +57,61 @@ button:focus {
 }; */
 
 .swipe-it {
-    font-family: 'Indie Flower';
-    font-size: 20px;
-    line-height: 1.45;
-};
-
-
-
-
-
-
+  font-family: 'Indie Flower';
+  font-size: 20px;
+  line-height: 1.45;
+}
 
 .section {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 320px) {
-
-    .section {
-        margin-top: 40px;
-    }
-
+  .section {
+    margin-top: 40px;
+  }
 }
-
 
 @media screen and (min-width: 768px) {
-    .section {
-        margin-top: 64px;
-    }
+  .section {
+    margin-top: 64px;
+  }
 }
 
-@media screen and (min-width:1280px) {
-    .section {
-        margin-top: 144px;
-    }
+@media screen and (min-width: 1280px) {
+  .section {
+    margin-top: 144px;
+  }
 }
 
 .container {
-    max-width: 280px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 668px;
-        padding-left: 40px;
-        padding-right: 40px;
-        overflow: hidden;
-    }
+  .container {
+    max-width: 668px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+  }
 }
-
 
 @media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1160px;
-        padding-left: 60px;
-        padding-right: 60px;
-        overflow: visible;
-    }
+  .container {
+    max-width: 1160px;
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow: visible;
+  }
 }
 
-
-
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
