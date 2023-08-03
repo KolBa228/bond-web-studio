@@ -39,6 +39,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .nav-container {
+    gap: 440px;
+  }
+}
+
 .nav-list {
   display: none;
 }
