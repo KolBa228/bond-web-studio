@@ -344,9 +344,6 @@ button[disabled] {
 @media screen and (min-width: 768px) {
   .comment-err {
     position: absolute;
-    text-align: center;
-    color: #ff45c0;
-    font-size: 14px;
     left: 214px;
     top: 308px;
   }
@@ -354,11 +351,16 @@ button[disabled] {
 
 @media screen and (min-width: 1280px) {
   .comment-err {
-    position: absolute;
-    text-align: center;
-    color: #ff45c0;
     font-size: 14px;
     left: 454px;
+    top: 320px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comment-err {
+    font-size: 14px;
+    left: 534px;
     top: 320px;
   }
 }
@@ -403,6 +405,14 @@ button[disabled] {
   .btn-err {
     font-size: 14px;
     left: 510px;
+    top: 451px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn-err {
+    font-size: 14px;
+    left: 589px;
     top: 451px;
   }
 }

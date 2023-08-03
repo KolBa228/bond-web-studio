@@ -86,6 +86,8 @@ const textarea = document.querySelector('.comment');
 const submitButton = document.querySelector('.sub-btn');
 const errorMessage = document.querySelector('#error-message');
 const STORAGE_KEY = 'feedback-form-state';
+const commErr = document.querySelector('.comment-err');
+const totalErr = document.querySelector('.btn-err');
 
 const nameRegex = /^[A-Za-z0-9]{3,}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -112,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   validateForm();
 
+  // Загрузка сохраненных данных из localStorage
   const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
   if (savedData && savedData.name) {
@@ -125,15 +128,17 @@ document.addEventListener('DOMContentLoaded', function() {
   if (savedData && savedData.comment) {
     textarea.value = savedData.comment;
   }
-
   form.addEventListener('submit', onFormSubmit);
   form.addEventListener('input', throttle(onFormInput, 500));
+
 });
 
 let feedbackFormData = {};
 
 function onFormInput(e) {
+  showCommentErr();
   e.preventDefault();
+  showTotalErr();
   feedbackFormData[e.target.name] = e.target.value;
 
   const data = JSON.stringify(feedbackFormData);
@@ -151,19 +156,40 @@ function onFormSubmit(e) {
   e.preventDefault();
 
   if (!iPhone.inputmask.isValid() || !nameRegex.test(iName.value.trim()) || textarea.value.trim().length < 20) {
-    errorMessage.textContent = 'Please fill all fields correctly.';
+    errorMessage.textContent = 'Пожалуйста, заполните все поля корректно.';
     return;
   }
 
   form.reset();
-
   localStorage.removeItem(STORAGE_KEY);
-
-
   feedbackFormData = {};
-
-
   validateForm();
 }
+
+function showCommentErr() {
+  if (textarea.value.length < 20) {
+    commErr.style.display = 'unset';
+  } else {
+    commErr.style.display = 'none';
+  }
+};
+
+function showTotalErr() {
+  if (
+    textarea.value.length < 20 ||
+    iName.value.length < 3 ||
+    iPhone.value.length < 9 ||
+    iEmail.value.length < 3
+  ) {
+    totalErr.style.display = 'unset';
+  } else {
+    totalErr.style.display = 'none';
+  }
+}
+
+
+
+
+
 
 
