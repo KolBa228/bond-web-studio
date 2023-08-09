@@ -1,10 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  $name = $_POST["firstname"];
-  $phone = $_POST["phone"];
-  $email = $_POST["email"];
-  $comment = $_POST["subject"];
+  $name = htmlspecialchars($_POST["firstname"]);
+$phone = htmlspecialchars($_POST["phone"]);
+$email = htmlspecialchars($_POST["email"]);
+$comment = htmlspecialchars($_POST["subject"]);
+
 
   $message = "Name: " . $name . "\n";
   $message .= "Phone: " . $phone . "\n";
