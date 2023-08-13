@@ -24,21 +24,25 @@
 ?>
 
 <?php
-$email_to = "bond.webstudio@gmail.com";
-$name = $_POST["name"];
-$email_from = $_POST["email"];
-$message = $_POST["message"];
-$email_subject = "Feedback from website";
-$headers = "From: $email_from .\n";
-"Reply-To: $email_from .\n";
-$message = "Name: ". $name . "\r\nMessage: " . $message;
-
-ini_set("sendmail_from", "bond.webstudio@gmail.com");
-$sent = mail($email_to, $email_subject, $message, $headers, "-f" .$email_from);
-if ($sent)
-{
-header("Location: http://fasthosts.co.uk");
-} else {
-echo "There has been an error sending your comments. Please try later.";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email_to = "bond.webstudio@gmail.com";
+  $name = htmlspecialchars($_POST["name"]);
+  $email_from = htmlspecialchars($_POST["email"]);
+  $message = htmlspecialchars($_POST["message"]);
+  $email_subject = "Feedback from website";
+  
+  $headers = "From: $email_from \r\n";
+  $headers .= "Reply-To: $email_from \r\n";
+  
+  $message_body = "Name: $name \r\nMessage: $message";
+  
+  ini_set("sendmail_from", $email_from);
+  $sent = mail($email_to, $email_subject, $message_body, $headers, "-f" . $email_from);
+  
+  if ($sent) {
+    header("Location: http://fasthosts.co.uk");
+  } else {
+    echo "There has been an error sending your comments. Please try later.";
+  }
 }
 ?>
