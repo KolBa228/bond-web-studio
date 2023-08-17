@@ -14,6 +14,7 @@ function validateForm(formData) {
   return true;
 }
 
+//https://core.telegram.org/bots/api#using-a-local-bot-api-server инструкции тут
 async function sendTelegramMessage(formData) {
   try {
     const response = await fetch(
