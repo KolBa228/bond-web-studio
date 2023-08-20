@@ -5,7 +5,8 @@ function handleSubmit(event) {
   const form = event.target;
   const formData = new FormData(form);
   if (validateForm(formData)) {
-    sendTelegramMessage(formData);
+    // sendTelegramMessage(formData);
+    sendEmailMessage(formData);
   }
 }
 
@@ -44,6 +45,37 @@ async function sendTelegramMessage(formData) {
     }
   } catch (error) {
     console.error('error:', error);
+  }
+}
+
+async function sendEmailMessage(formData) {
+  const emailData = {
+    recipients: ['quadravlad@gmail.com'],
+    subject: 'New request',
+    messageBody: `
+      <p>Name: ${formData.get('firstname')}</p>
+      <p>Phone: ${formData.get('phone')}</p>
+      <p>Email: ${formData.get('email')}</p>
+      <p>Comment: ${formData.get('subject')}</p>
+    `,
+  };
+
+  try {
+    const response = await fetch('http://localhost:3000/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(emailData),
+    });
+
+    if (response.ok) {
+      console.log('Email sent successfully');
+    } else {
+      console.error('Failed to send email');
+    }
+  } catch (error) {
+    console.error('Error sending email:', error);
   }
 }
 
