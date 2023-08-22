@@ -12,4 +12,4 @@ import './js/modals';
 import './js/what-we-do';
 // import './js_2/test_validation';
 import './js_2/get_touch';
-import './js_2/send_contact_request';
+// import './js_2/send_contact_request';
