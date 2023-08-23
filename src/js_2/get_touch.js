@@ -1,4 +1,3 @@
-
 // const validateForm = () => {
 //   const isPhoneValid = iPhone.inputmask.isValid();
 //   const isNameValid = nameRegex.test(iName.value.trim());
@@ -15,7 +14,6 @@
 // document.addEventListener('DOMContentLoaded', function() {
 //   Inputmask({ mask: '+44 (999) 999 99 99' }).mask(iPhone);
 
-
 //   iPhone.addEventListener('input', validateForm);
 //   iName.addEventListener('input', validateForm);
 //   iEmail.addEventListener('input', validateForm);
@@ -31,7 +29,7 @@
 //   });
 // });
 
-// // 
+// //
 
 // form.addEventListener('submit', onFormSubmit);
 // form.addEventListener('input', throttle(onFormInput, 500));
@@ -105,7 +103,7 @@ const validateForm = () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   Inputmask({ mask: '+44 (999) 999 99 99' }).mask(iPhone);
 
   iPhone.addEventListener('input', validateForm);
@@ -128,9 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (savedData && savedData.comment) {
     textarea.value = savedData.comment;
   }
-  form.addEventListener('submit', onFormSubmit);
+  // form.addEventListener('submit', onFormSubmit);
   form.addEventListener('input', throttle(onFormInput, 500));
-
 });
 
 let feedbackFormData = {};
@@ -155,7 +152,11 @@ function onFormInput(e) {
 function onFormSubmit(e) {
   e.preventDefault();
 
-  if (!iPhone.inputmask.isValid() || !nameRegex.test(iName.value.trim()) || textarea.value.trim().length < 20) {
+  if (
+    !iPhone.inputmask.isValid() ||
+    !nameRegex.test(iName.value.trim()) ||
+    textarea.value.trim().length < 20
+  ) {
     errorMessage.textContent = 'Пожалуйста, заполните все поля корректно.';
     return;
   }
@@ -172,7 +173,7 @@ function showCommentErr() {
   } else {
     commErr.style.display = 'none';
   }
-};
+}
 
 function showTotalErr() {
   if (
@@ -186,10 +187,3 @@ function showTotalErr() {
     totalErr.style.display = 'none';
   }
 }
-
-
-
-
-
-
-
