@@ -1,10 +1,10 @@
 // Обработчик события отправки формы
 function handleSubmit(event) {
-  // event.preventDefault();
+  event.preventDefault();
   const form = event.target;
   const formData = new FormData(form);
   if (validateForm(formData)) {
-    // sendTelegramMessage(formData);
+    sendTelegramMessage(formData);
     // sendEmailMessage(formData);
   }
 }
