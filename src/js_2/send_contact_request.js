@@ -6,6 +6,11 @@ function handleSubmit(event) {
   if (validateForm(formData)) {
     sendTelegramMessage(formData);
     // sendEmailMessage(formData);
+    // test
+    // test
+    // test
+    // test
+      form.reset()
   }
 }
 
